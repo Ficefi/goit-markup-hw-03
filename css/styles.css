@@ -185,6 +185,8 @@ img {
   text-decoration: none;
   margin-right: 76px;
   color: var(--iris);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 /* Default classes */
@@ -225,8 +227,12 @@ img {
 .info-style:focus {
   color: #404bbf;
 }
+.foo {
+  padding: 100px 0;
+}
 .foo-paragraph {
   letter-spacing: 0.02em;
   line-height: 1.5;
+  max-width: 264px;
   color: var(--cloud);
 }
