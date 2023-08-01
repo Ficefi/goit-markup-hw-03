@@ -57,6 +57,10 @@ img {
 .sect-third {
   padding-bottom: 120px;
 }
+.sect-fourth {
+  background-color: var(--cloud);
+  padding: 120px 0;
+}
 .solution {
   color: #ffffff;
   line-height: 1.07;
@@ -67,9 +71,14 @@ img {
   letter-spacing: 0.02em;
 }
 .features-list {
+  display: flex;
   gap: 24px;
 }
 .images-list {
+  display: flex;
+  gap: 24px;
+}
+.person-list {
   display: flex;
   gap: 24px;
 }
@@ -100,6 +109,8 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .portfolio-article {
   color: var(--dark_gray);
@@ -114,7 +125,9 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: calc((100% - 72px) / 4);
+}
+.features-element {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .people-paragraph {
   color: var(--gray);
@@ -122,6 +135,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .portfolio-paragraph {
   color: var(--gray);
@@ -130,11 +144,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.sect-fourth {
-  background-color: var(--cloud);
+.people-container {
+  padding-bottom: 32px 0;
 }
 .list-back {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .btn {
   background: var(--iris);
@@ -220,6 +236,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--gray);
+}
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 .info-style:hover {
   color: #404bbf;
