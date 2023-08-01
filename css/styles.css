@@ -143,7 +143,7 @@ img {
   letter-spacing: 0.02em;
 }
 .features-element {
-  width: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .people-paragraph {
   color: var(--gray);
